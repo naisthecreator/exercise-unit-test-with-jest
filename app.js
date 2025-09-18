@@ -7,10 +7,14 @@ const fromEuroToDollar = function(valueInEuro) {
 }
 
 const fromDollarToYen = function (valueInDollar) {
-    let valueInYen = valueInDollar (156.5 / 1.07);
+    let valueInYen = valueInDollar * (156.5 / 1.07);
     return valueInYen;
 }
 
+const fromYenToPounds = function (valueInYen) {
+    let valueinPounds = valueInYen * (0.87 / 156.5);
+    return valueinPounds;
+}
 const sum = (a,b)=>{
     return a+b
 }
